@@ -23,7 +23,6 @@ export default function Login() {
 
       localStorage.setItem("email", email);
       localStorage.setItem("token", response.data.token);
-      console.log("Token:", response.data.token);
       localStorage.setItem("expiration", response.data.expiration);
 
       navigate("/alunos");
